@@ -6,3 +6,4 @@ def common_elements(set_1, set_2):
             if i == j:
                 common.append(i)
     return common
+# or return set_1 & set_2
