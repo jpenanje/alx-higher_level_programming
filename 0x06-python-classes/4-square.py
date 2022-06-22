@@ -14,7 +14,10 @@ class Square:
 
     @property
     def size(self):
-        """Retrieve the size"""
+        """Retrieve the size
+        Returns:
+            size of square
+        """
         return self.__size
 
     @size.setter
@@ -23,7 +26,7 @@ class Square:
         Args:
             value: value of size
         """
-        if type(size) == int:
+        if type(value) == int:
             self.__size = value
         else:
             raise TypeError("size must be an integer")
