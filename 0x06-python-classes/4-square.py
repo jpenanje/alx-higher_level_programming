@@ -10,12 +10,11 @@ class Square:
         Args:
             size: size of square
         """
-        if type(size) == int:
-            self.__size = size
-        else:
+        if type(size) is not int:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
+        self.__size = size
 
     @property
     def size(self):
@@ -31,12 +30,11 @@ class Square:
         Args:
             value: value of size
         """
-        if type(value) == int:
-            self.__size = value
-        else:
+        if type(value) is not int:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
+        self.__size = value
 
     def area(self):
         """Calculate area of square
