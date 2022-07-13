@@ -52,7 +52,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return rect
         for i in range(self.__height):
-            rect += (str(type(self).print_symbol) * self.__width) + "\n"
+            rect += (str(self.print_symbol) * self.__width) + "\n"
         return rect[:-1]
 
     def __repr__(self):
